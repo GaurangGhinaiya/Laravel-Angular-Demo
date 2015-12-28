@@ -19,40 +19,12 @@ function ngConfirmClick() {
     };
 }
 
-function showMenu() {
-    return {
-        link: function (scope, element, attrs) {
-            $('#nav-accordion').dcAccordion({
-                eventType: 'click',
-                autoClose: true,
-                saveState: true,
-                disableLink: true,
-                speed: 'slow',
-                showCount: false,
-                autoExpand: true,
-                classExpand: 'dcjq-current-parent'
-            });
-        }
-    };
-}
-
-
 function smallNav() {
     return {
         link: function (scope, element, attrs) {
             $(element).click(function (e) {
-                $(".leftside-navigation").niceScroll({
-                    cursorcolor: "#1FB5AD",
-                    cursorborder: "0px solid #fff",
-                    cursorborderradius: "0px",
-                    cursorwidth: "3px"
-                });
 
                 $('#sidebar').toggleClass('hide-left-bar');
-                if ($('#sidebar').hasClass('hide-left-bar')) {
-                    $(".leftside-navigation").getNiceScroll().hide();
-                }
-                $(".leftside-navigation").getNiceScroll().show();
                 $('#main-content').toggleClass('merge-left');
                 e.stopPropagation();
                 if ($('#container').hasClass('open-right-panel')) {
@@ -73,5 +45,4 @@ function smallNav() {
 angular
         .module('Directives', [])
         .directive('ngConfirmClick', ngConfirmClick)
-        .directive('showMenu', showMenu)
         .directive('smallNav', smallNav);

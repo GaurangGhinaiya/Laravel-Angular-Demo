@@ -37,21 +37,21 @@
 
         <!--Core js-->
         <script src="app/js/jquery.js"></script>
-        <script src="app/js/jquery-ui/jquery-ui-1.10.1.custom.min.js"></script>
+        <!--<script src="app/js/jquery-ui/jquery-ui-1.10.1.custom.min.js"></script>-->
         <script src="app/bs3/js/bootstrap.min.js"></script>
 
-        <script src="app/js/jquery.scrollTo.min.js"></script>
-        <script src="app/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
-        <script src="app/js/jquery.nicescroll.js"></script>
+        <!--<script src="app/js/jquery.scrollTo.min.js"></script>-->
+        <!--<script src="app/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>-->
+        <!--<script src="app/js/jquery.nicescroll.js"></script>-->
 
-        <script src="app/js/jquery.scrollTo/jquery.scrollTo.js"></script>
-        <script src="app/js/jquery.easing.min.js"></script>
+        <!--<script src="app/js/jquery.scrollTo/jquery.scrollTo.js"></script>-->
+        <!--<script src="app/js/jquery.easing.min.js"></script>-->
         <script src="app/js/underscore-min.js"></script>
 
-        <script src="app/js/jquery.dcjqaccordion.2.7.js"></script>
+        <!--<script src="app/js/jquery.dcjqaccordion.2.7.js"></script>-->
 
         <!--common script init for all pages-->
-        <script src="app/js/scripts.js"></script>
+        <!--<script src="app/js/scripts.js"></script>-->
 
         <!-- Notification Js -->
         <script src="app/js/modernizr.custom.js"></script>
@@ -77,12 +77,8 @@
         <!--click-to-edit or edit-in-place-->
         <script src="app/bower_components/angular-xeditable/dist/js/xeditable.min.js"></script>
 
-        <!--Angular Image Upload in Base64 Directive-->
-        <script src="app/js/imageupload.js"></script>
-
         <!-- Page level Js (Angular Js Controller, Directive, Constant etc) -->
         <script src="app/js/directive.js"></script>
-        <script src="app/js/filter.js"></script>
         <script src="app/js/constants.js"></script>
         <script src="app/partials/app.js"></script>
 

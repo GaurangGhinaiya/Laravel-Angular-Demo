@@ -1,7 +1,7 @@
 /**
  * Created by Gaurnag Ghinaiya on 20-07-2015.
  */
-var modules = ['ui.router', 'ui.bootstrap', 'Directives', 'Constants', 'imageupload', 'blockUI', 'xeditable'];
+var modules = ['ui.router', 'ui.bootstrap', 'Directives', 'Constants', 'blockUI', 'xeditable'];
 
 var App = angular.module('PPO', modules)
         .run(
