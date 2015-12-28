@@ -37,21 +37,10 @@
 
         <!--Core js-->
         <script src="app/js/jquery.js"></script>
-        <!--<script src="app/js/jquery-ui/jquery-ui-1.10.1.custom.min.js"></script>-->
         <script src="app/bs3/js/bootstrap.min.js"></script>
 
-        <!--<script src="app/js/jquery.scrollTo.min.js"></script>-->
-        <!--<script src="app/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>-->
-        <!--<script src="app/js/jquery.nicescroll.js"></script>-->
-
-        <!--<script src="app/js/jquery.scrollTo/jquery.scrollTo.js"></script>-->
-        <!--<script src="app/js/jquery.easing.min.js"></script>-->
         <script src="app/js/underscore-min.js"></script>
 
-        <!--<script src="app/js/jquery.dcjqaccordion.2.7.js"></script>-->
-
-        <!--common script init for all pages-->
-        <!--<script src="app/js/scripts.js"></script>-->
 
         <!-- Notification Js -->
         <script src="app/js/modernizr.custom.js"></script>
