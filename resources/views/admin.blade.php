@@ -32,6 +32,7 @@
 
     </head>
     <body ng-controller="AppCtrl">
+        
         <section id="container" ui-view=""></section>
 
         <!--Core js-->
@@ -87,7 +88,7 @@
 
         <!--Dashboard Js-->
         <script src="app/partials/dashboard/dashboard.js"></script>
-        
+
         <!--Dashboard Js-->
         <script src="app/partials/profile/profile.js"></script>
 
@@ -99,14 +100,13 @@
 
         <!--Course master-->
         <script src="app/partials/course/course.js"></script>
-        @if(Auth::User()->user_type == USER_TYPE_MEMBER)
-        
-        <script src="app/partials/member/usercourse/usercourse.js"></script>
-        
-        @else
-        <!--Usre Course -->
-        <script src="app/partials/usercourse/usercourse.js"></script>
 
+        <!--Login User s member then display member course area or admin course area-->
+        <!--Usre Course -->
+        @if(Auth::User()->user_type == USER_TYPE_MEMBER)        
+        <script src="app/partials/member/usercourse/usercourse.js"></script>
+        @else
+        <script src="app/partials/usercourse/usercourse.js"></script>
         @endif
 
 

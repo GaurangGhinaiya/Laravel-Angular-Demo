@@ -9,6 +9,7 @@
         <section class="panel">
             <header class="panel-heading">
                 Courses
+                <input type="text" ng-model="search" class="form-control" placeholder="search">
             </header>
             <div class="panel-body">
                 <table class="table table-hover table-bordered" ng-show="courses.length">
@@ -22,7 +23,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr ng-repeat = "u in courses">
+                        <tr ng-repeat = "u in courses | filter:search">
                             <td>{{$index + 1}}</td>
                             <td>{{u.name}}</td>
                             <td>{{u.description}}</td>

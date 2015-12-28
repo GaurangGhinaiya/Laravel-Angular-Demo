@@ -9,6 +9,7 @@
         <section class="panel">
             <header class="panel-heading">
                 Universities
+                <input type="text" ng-model="search" class="form-control" placeholder="search">
             </header>
             <div class="panel-body">
                 <table class="table table-hover table-bordered" ng-show="universities.length">
@@ -21,7 +22,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr ng-repeat = "u in universities">
+                        <tr ng-repeat = "u in universities | filter:search">
                             <td>{{$index + 1}}</td>
                             <td class="custom">
                                 <span editable-text="u.name" onbeforesave="updateUniversityFn($data,'name',u.id)">

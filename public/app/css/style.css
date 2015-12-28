@@ -57,7 +57,7 @@ ul.sidebar-menu li a.active i{color:#65B5C9;}
 .fixed-top{position:fixed;box-shadow:1px 0 3px rgba(0,0,0,.15);}
 .wrapper{display:inline-block;margin-top:80px;padding:15px;width:100%;}
 .brand{background:#65B5C9;float:left;width:240px;height:80px;position:relative;}
-a.logo{font-size:21px;color:#2e2e2e;float:left;margin:0px 60px;text-transform:uppercase;}
+a.logo{font-size: 21px;color: #2e2e2e;float: left;margin: 20px 0 0 25px;text-transform: uppercase;}
 a.logo:hover,a.logo:focus{text-decoration:none;outline:none;}
 a.logo span{color:#FF6C60;}
 #top_menu .nav>li,ul.top-menu>li{float:left;}
