@@ -12,8 +12,7 @@
 
         <!--Core CSS -->
         <link href="app/bs3/css/bootstrap.min.css" rel="stylesheet">
-        <!--<link href="/app/css/bootstrap-reset.css" rel="stylesheet">-->
-        <link href="app/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
         <!-- Custom styles for this template -->
         <link href="app/css/style.css" rel="stylesheet">

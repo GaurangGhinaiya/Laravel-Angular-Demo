@@ -76,4 +76,23 @@ class CommonController extends Controller {
         }
     }
 
+    public function updateProfile() {
+        $input = Request::all();
+        $id = Auth::User()->id;
+        $validation = User::validateProfile($input, $id);
+        if ($validation->fails()) {
+            $message = $validation->messages()->first();
+            return Response()->json(ResponseManager::getError('', 10, $message));
+        }
+
+        $user = User::where('id', $id)->update($input);
+        if ($user) {
+            $message = 'User profile successfully updated';
+            return Response()->json(ResponseManager::getResult($input, 10, $message));
+        } else {
+            $message = 'Error in  updating user profile';
+            return Response()->json(ResponseManager::getError('', 10, $message));
+        }
+    }
+
 }

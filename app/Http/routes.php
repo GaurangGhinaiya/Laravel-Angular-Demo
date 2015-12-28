@@ -32,15 +32,25 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/', 'Common\LoginController@index');
 //Authentication Module
     Route::post('/auth/login', 'Common\LoginController@doLogin');
-    Route::post('/auth/facebook', 'Common\LoginController@facebook');
-    Route::post('/auth/forgot-password', 'Common\LoginController@forgotPassword');
-    Route::post('/auth/reset-password', 'Common\LoginController@resetPassword');
     Route::get('/loggedinuser', 'Common\LoginController@logginuser');
     Route::get('/logout', 'Common\LoginController@logout');
     Route::get('/db-setup', 'Common\CommonController@dbSetup');
+
+    Route::post('/update-password', 'Common\CommonController@updatePassword');
+    Route::post('/update-profile', 'Common\CommonController@updateProfile');
 
     //User Ctrl
     Route::resource('/user', 'UserController');
     Route::post('/user/paginate', 'UserController@paginateUser');
     Route::post('/user/activate/{user_id}', 'UserController@updateActive');
+
+    //University Master
+    Route::resource('/university', 'UniversityController');
+    Route::get('/university-course/{uni_id}', 'UniversityController@universityCourses');
+
+    //course Master
+    Route::resource('/course', 'CourseController');
+
+    //course Master
+    Route::resource('/usercourse', 'UserCourseController');
 });

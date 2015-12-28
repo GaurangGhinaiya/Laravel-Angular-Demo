@@ -12,7 +12,7 @@ User.config(function ($stateProvider) {
                 templateUrl: 'app/partials/users/user.html',
                 controller: 'UserCtrl',
                 resolve: {
-                    Users: function (UserService, userType) {
+                    Users: function (UserService) {
                         var obj = {
                             page: 1,
                             limit: 25,

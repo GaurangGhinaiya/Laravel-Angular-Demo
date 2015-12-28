@@ -109,7 +109,7 @@ App.controller('AppCtrl', function ($scope, $rootScope, userType, AdminServices,
             layout: 'attached',
             effect: 'bouncyflip',
             type: type,
-            ttl: time || 10000
+            ttl: time || 3000
         });
         notification.show();
     }

@@ -24,14 +24,5 @@ Dashboard.controller('DashboardCtrl', function ($scope, DashboardService) {
 
 Dashboard.service('DashboardService', function ($http) {
     return{
-        counts: function () {
-            return $http.get('dashboard-count');
-        },
-        getPayment: function (obj) {
-            return $http.post('user-payment', obj);
-        },
-        doPayment: function (obj) {
-            return $http.post('user-dopayment', obj);
-        }
     }
 });

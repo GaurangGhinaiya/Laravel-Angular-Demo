@@ -49,7 +49,7 @@
                                 </a>
                             </td>
                             <td>
-                                <button class="btn btn-xs btn-danger" ng-confirm-click confirmed-click="deleteUserFn(u.id)" type="button"  tooltip="Delete User"><i class="fa fa-trash-o"></i></button>
+                                <button class="btn btn-xs btn-danger" ng-confirm-click confirmed-click="deleteUserFn(u.id)" type="button"  uib-tooltip="Delete User"><i class="fa fa-trash-o"></i></button>
                             </td>
                         </tr>
                     </tbody>
@@ -57,7 +57,7 @@
 
                 <div class="text-right m-t-lg m-b-lg" ng-show="users.length">
                     <!--<div class="col-md-6 text-right" >-->
-                    <pagination boundary-links="true" style="margin: 0 0 5px 0;"
+                    <uib-pagination boundary-links="true" style="margin: 0 0 5px 0;"
                                 total-items="totalCount"
                                 items-per-page="limit"
                                 ng-model="currentPage"
@@ -68,7 +68,7 @@
                                 next-text="&rsaquo;"
                                 first-text="&laquo;"
                                 last-text="&raquo;">
-                    </pagination>
+                    </uib-pagination>
                 </div>
                 <div class="alert alert-danger" ng-show="users.length == 0">
                     <div class="notification-info">

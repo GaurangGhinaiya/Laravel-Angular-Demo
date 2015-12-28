@@ -13,7 +13,7 @@
         <link href="app/bs3/css/bootstrap.min.css" rel="stylesheet">
 
         <!--Font-awesome CSS-->
-        <link href="app/font-awesome/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
         <!--Ui-Block CSS-->
         <link href="app/bower_components/angular-block-ui/dist/angular-block-ui.min.css" rel="stylesheet">
@@ -87,9 +87,27 @@
 
         <!--Dashboard Js-->
         <script src="app/partials/dashboard/dashboard.js"></script>
+        
+        <!--Dashboard Js-->
+        <script src="app/partials/profile/profile.js"></script>
 
         <!--Member Js-->
         <script src="app/partials/users/user.js"></script>
+
+        <!--University master-->
+        <script src="app/partials/university/university.js"></script>
+
+        <!--Course master-->
+        <script src="app/partials/course/course.js"></script>
+        @if(Auth::User()->user_type == USER_TYPE_MEMBER)
+        
+        <script src="app/partials/member/usercourse/usercourse.js"></script>
+        
+        @else
+        <!--Usre Course -->
+        <script src="app/partials/usercourse/usercourse.js"></script>
+
+        @endif
 
 
     </body>
